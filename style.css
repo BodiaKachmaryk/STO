@@ -1,0 +1,113 @@
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e0f2f1; /* Ніжно голубий колір фону */
+}
+
+header {
+    background-color: #1565c0; /* Синій колір для верхнього колонтитулу */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #000;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #1565c0; /* Синій колір для нижнього колонтитулу */
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Імпровізована сітка: стовпці будуть автоматично розподілені так, щоб займати мінімально 200px, але можуть розтягуватися, якщо є більше місця */
+    gap: 10px; /* Відступ між зображеннями */
+}
+
+.image-container {
+    position: relative; /* Потрібно для абсолютного позиціонування */
+}
+
+.image-container img {
+    width: 100%; /* Зображення займатиме всю ширину контейнера */
+    height: auto; /* Автоматична висота для збереження пропорцій */
+}
+
+.vacancy-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.vacancy-list li {
+    text-align: center;
+}
+
+.vacancy-list img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+/* Нові стилі для вакансій */
+.service-list {
+    list-style: none;
+    padding: 0;
+}
+
+.service-list li {
+    margin-bottom: 20px;
+}
+
+.service-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.service-item img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.service-details h3 {
+    margin-top: 0;
+}
+
+.service-details p {
+    margin-bottom: 0;
+}
